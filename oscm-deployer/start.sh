@@ -118,5 +118,5 @@ if [ ${SAMPLE_DATA} == "true" ] && [ -S /var/run/docker.sock ]; then
         echo "Docker socket is not mounted. Aborting."
         exit 1
     fi
-    docker-compose -f docker-compose-initdb-oscm.yml -p $(basename ${DOCKER_PATH}) up oscm-initdb-sample
+    docker-compose -f docker-compose-initdb.yml -p $(basename ${DOCKER_PATH}) up oscm-initdb-sample
 fi
