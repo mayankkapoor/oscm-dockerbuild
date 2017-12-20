@@ -16,8 +16,19 @@
   </Resource>
 
   <Container id="Default Stateless Container" type="STATELESS">
+    accessTimeout = -1
     callbackThreads = ${CONTAINER_CALLBACK_THREADS}
+    closeTimeout = 5 minutes
+    garbageCollection = true
+    idleTimeout = 0 minutes
+    maxAge = 0 hours
+    maxAgeOffset = -1
     maxSize = ${CONTAINER_MAX_SIZE}
+    minSize = 100
+    replaceAged = true
+    replaceFlushed = false
+    strictPooling = false
+    sweepInterval = 5 minutes
   </Container>
 
   <Resource id="APPMail" type="javax.mail.Session">
