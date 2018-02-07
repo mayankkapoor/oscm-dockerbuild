@@ -300,3 +300,5 @@ SSO_DEFAULT_TENANT_ID=${SSO_DEFAULT_TENANT_ID}
 # The ID is used for verifying that the response to an authentication request 
 # is returned by the correct IdP.
 SSO_IDP_SAML_ASSERTION_ISSUER_ID=${SSO_IDP_SAML_ASSERTION_ISSUER_ID}
+
+HELP_URL=${HELP_URL}
